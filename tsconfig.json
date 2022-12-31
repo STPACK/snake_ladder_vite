@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "types": ["vite-plugin-svgr/client"],
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -17,10 +18,10 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"],
-      "@/assets": ["assets/*"],
-      // "@assets/*": ["./assets/*"],
-      // "@components/*": ["./components/*"],
+      "@assets/*": ["assets/*"],
+      "@hook/*": ["hook/*"],
+      "@features/*": ["features/*"],
+      "@components/*": ["components/*"]
     }
   },
   "include": ["src"],

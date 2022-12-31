@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import picc from '@/assets/pic_react.svg'
+import { PlayerSettingProvider } from '@hook/usePlayerSetting'
+import { SettingBoardPage } from '@features/settingBoard/page/SettingBoardPage'
+import { PlayingBoardPage } from '@features/playingBaord/page/PlayingBoardPage'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='App'>
-      <div className='text-red border'>tzxt</div>
-      <img src={picc} alt='' />
-    </div>
+    <PlayerSettingProvider>
+      <SettingBoardPage />
+      <PlayingBoardPage />
+    </PlayerSettingProvider>
   )
 }
 
